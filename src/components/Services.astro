@@ -1,0 +1,20 @@
+---
+import servicesData from '../data/servicesData';
+import type { ServiceProps } from '../data/servicesData';
+---
+
+<section>
+    {
+        servicesData.map((service) => (
+            <div>
+                <img src={service.image} alt={service.title} />
+                <h3>{service.title}</h3>
+                <ul>
+                    {service.items.map((item) => (
+                        <li>{item}</li>
+                    ))}
+                </ul>
+            </div>
+        ))
+    }
+</section>
