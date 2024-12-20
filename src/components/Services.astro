@@ -1,20 +1,14 @@
 ---
-import servicesData from '../data/servicesData';
-import type { ServiceProps } from '../data/servicesData';
+import { services } from '../data/services-data.json';
+import ServicesItem from './ServicesItem.astro';
 ---
 
 <section>
-    {
-        servicesData.map((service) => (
-            <div>
-                <img src={service.image} alt={service.title} />
-                <h3>{service.title}</h3>
-                <ul>
-                    {service.items.map((item) => (
-                        <li>{item}</li>
-                    ))}
-                </ul>
-            </div>
-        ))
-    }
+    <ul>
+        {
+            services.map((service) => (
+                <ServicesItem title={service.title} image={service.image} items={service.items} />
+            ))
+        }
+    </ul>
 </section>
