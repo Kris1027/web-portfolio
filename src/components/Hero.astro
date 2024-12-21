@@ -1,10 +1,11 @@
 ---
 import { Image } from 'astro:assets';
 import heroImage from '../assets/hero.svg';
-import SectionLayout from '../layouts/SectionLayout.astro';
 ---
 
-<SectionLayout>
+<section
+    class='flex flex-col justify-start md:justify-center items-center py-20 md:py-0 px-6 text-center text-white md:h-screen'
+>
     <h1 class='font-semibold text-md sm:text-2xl md:text-3xl lg:text-5xl text-shadow-xl uppercase'>
         Nowoczesne strony internetowe
     </h1>
@@ -12,4 +13,4 @@ import SectionLayout from '../layouts/SectionLayout.astro';
         Oferujemy strony, które wyróżniają się na tle konkurencji.
     </p>
     <Image class='py-5' src={heroImage} alt='website advertising' />
-</SectionLayout>
+</section>
