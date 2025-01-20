@@ -1,0 +1,110 @@
+---
+// Footer.astro
+---
+
+<footer id='contact' class='bg-slate-900/80 backdrop-blur-md mt-24'>
+    <div class='max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8'>
+        {/* Main Footer Content */}
+        <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12'>
+            {/* Contact Info - Moved to first position and styled for emphasis */}
+            <div class='space-y-6 md:col-span-2 lg:col-span-1 bg-slate-800/50 p-6 rounded-xl'>
+                <h3 class='text-white font-bold text-xl'>Kontakt</h3>
+                <ul class='space-y-4'>
+                    <li class='text-gray-200 text-base'>
+                        <span class='block font-medium text-blue-400 mb-1'>Email:</span>
+                        <a
+                            href='mailto:kris1027.dev@gmail.com'
+                            class='hover:text-blue-400 transition-colors'
+                        >
+                            kris1027.dev@gmail.com
+                        </a>
+                    </li>
+                    <li class='text-gray-200 text-base'>
+                        <span class='block font-medium text-blue-400 mb-1'>Telefon:</span>
+                        <a href='tel:+48792542841' class='hover:text-blue-400 transition-colors'>
+                            +48 792 542 841
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            {/* Services Links */}
+            <div class='space-y-4'>
+                <h3 class='text-white font-bold text-lg'>Usługi</h3>
+                <ul class='space-y-2'>
+                    <li>
+                        <a
+                            href='#strony-wizytowki'
+                            class='text-gray-400 hover:text-white transition-colors text-sm'
+                        >
+                            Strony Wizytówki
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href='#strony-katalogowe'
+                            class='text-gray-400 hover:text-white transition-colors text-sm'
+                        >
+                            Strony Katalogowe
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href='#landing-page'
+                            class='text-gray-400 hover:text-white transition-colors text-sm'
+                        >
+                            Landing Page
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href='#blog'
+                            class='text-gray-400 hover:text-white transition-colors text-sm'
+                        >
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href='#sklep'
+                            class='text-gray-400 hover:text-white transition-colors text-sm'
+                        >
+                            Sklep Internetowy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            {/* Company Info */}
+            <div class='space-y-4'>
+                <h3 class='text-white font-bold text-lg'>Kris Websites</h3>
+                <p class='text-gray-400 text-sm'>
+                    Tworzymy nowoczesne strony internetowe, które pomagają Twojej firmie się
+                    rozwijać.
+                </p>
+                <div class='flex space-x-4'>
+                    <a
+                        href='https://www.linkedin.com/in/krzysztof-obarzanek/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        class='text-gray-400 hover:text-blue-400 transition-colors'
+                    >
+                        <span class='sr-only'>LinkedIn</span>
+                        <svg class='h-6 w-6' fill='currentColor' viewBox='0 0 24 24'>
+                            <path
+                                d='M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z'
+                            ></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div class='mt-12 pt-8 border-t border-gray-800'>
+            <p class='text-gray-400 text-sm text-center'>
+                © 2024 Kris Websites. Wszystkie prawa zastrzeżone.
+            </p>
+        </div>
+    </div>
+</footer>
