@@ -1,0 +1,116 @@
+<section class='max-w-7xl mx-auto px-4 py-16 md:py-24 text-white'>
+    <!-- Header Section -->
+    <div class='max-w-3xl mx-auto text-center mb-16'>
+        <h2 class='text-3xl md:text-4xl lg:text-5xl font-bold mb-6'>Sklep Internetowy</h2>
+        <p class='text-lg md:text-xl'>
+            Rozpocznij sprzedaż online bez zbędnych komplikacji. Nasz prosty sklep internetowy
+            zawiera wszystko, czego potrzebujesz do rozpoczęcia e-commerce, w przystępnej cenie i z
+            minimalną krzywą uczenia się.
+        </p>
+    </div>
+
+    <!-- Image Section -->
+    <div class='max-w-2xl mx-auto mb-16'>
+        <img src='/ecommerce.svg' alt='simple ecommerce platform' class='w-full h-auto' />
+    </div>
+
+    <!-- Features Grid -->
+    <div class='grid md:grid-cols-2 gap-12 max-w-4xl mx-auto'>
+        <!-- Left Column -->
+        <div class='space-y-8'>
+            <h3 class='text-xl md:text-2xl font-semibold mb-6'>Podstawowe funkcje sklepu:</h3>
+            <ul class='space-y-4'>
+                {
+                    [
+                        'Intuicyjny panel zarządzania produktami',
+                        'Popularne metody płatności (BLIK, przelewy)',
+                        'Integracja z firmami kurierskimi',
+                        'Prosty proces zamówienia',
+                        'Koszyk zakupowy',
+                        'Automatyczne potwierdzenia zamówień',
+                        'Status realizacji zamówienia',
+                        'Podstawowe raporty sprzedaży',
+                    ].map((item) => (
+                        <li class='flex items-start'>
+                            <span class='inline-block w-2 h-2 mt-2 mr-3 bg-teal-500 rounded-full' />
+                            <span class=''>{item}</span>
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+
+        <!-- Right Column -->
+        <div class='space-y-8'>
+            <h3 class='text-xl md:text-2xl font-semibold mb-6'>Zalety prostego e-commerce:</h3>
+            <ul class='space-y-4'>
+                {
+                    [
+                        'Niski koszt rozpoczęcia sprzedaży online',
+                        'Szybkie wdrożenie sklepu (2-3 tygodnie)',
+                        'Łatwa obsługa bez znajomości technologii',
+                        'Możliwość późniejszej rozbudowy',
+                        'Zgodność z przepisami RODO',
+                        'Responsywność na wszystkich urządzeniach',
+                        'Podstawowa optymalizacja SEO',
+                        'Regularne aktualizacje bezpieczeństwa',
+                    ].map((item) => (
+                        <li class='flex items-start'>
+                            <span class='inline-block w-2 h-2 mt-2 mr-3 bg-teal-500 rounded-full' />
+                            <span class=''>{item}</span>
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+    </div>
+
+    <!-- Payment & Shipping Section -->
+    <div class='mt-16 max-w-4xl mx-auto'>
+        <div class='grid md:grid-cols-2 gap-8'>
+            <div class='bg-opacity-20 bg-teal-900 p-8 rounded-xl'>
+                <h4 class='text-xl font-semibold mb-6 text-center'>Metody Płatności</h4>
+                <div class='grid grid-cols-2 gap-4 text-center'>
+                    <div class='p-4 bg-opacity-20 bg-teal-800 rounded-lg'>
+                        <div class='text-3xl mb-2'>💳</div>
+                        <div class='text-sm'>Karty płatnicze</div>
+                    </div>
+                    <div class='p-4 bg-opacity-20 bg-teal-800 rounded-lg'>
+                        <div class='text-3xl mb-2'>🔄</div>
+                        <div class='text-sm'>Szybkie przelewy</div>
+                    </div>
+                    <div class='p-4 bg-opacity-20 bg-teal-800 rounded-lg'>
+                        <div class='text-3xl mb-2'>📱</div>
+                        <div class='text-sm'>BLIK</div>
+                    </div>
+                    <div class='p-4 bg-opacity-20 bg-teal-800 rounded-lg'>
+                        <div class='text-3xl mb-2'>📦</div>
+                        <div class='text-sm'>Za pobraniem</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='bg-opacity-20 bg-teal-900 p-8 rounded-xl'>
+                <h4 class='text-xl font-semibold mb-6 text-center'>Dostawa</h4>
+                <div class='grid grid-cols-2 gap-4 text-center'>
+                    <div class='p-4 bg-opacity-20 bg-teal-800 rounded-lg'>
+                        <div class='text-3xl mb-2'>🚚</div>
+                        <div class='text-sm'>Kurierzy</div>
+                    </div>
+                    <div class='p-4 bg-opacity-20 bg-teal-800 rounded-lg'>
+                        <div class='text-3xl mb-2'>📮</div>
+                        <div class='text-sm'>Paczkomaty</div>
+                    </div>
+                    <div class='p-4 bg-opacity-20 bg-teal-800 rounded-lg'>
+                        <div class='text-3xl mb-2'>🏪</div>
+                        <div class='text-sm'>Odbiór osobisty</div>
+                    </div>
+                    <div class='p-4 bg-opacity-20 bg-teal-800 rounded-lg'>
+                        <div class='text-3xl mb-2'>📫</div>
+                        <div class='text-sm'>Poczta Polska</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
