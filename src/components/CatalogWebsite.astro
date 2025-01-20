@@ -1,0 +1,69 @@
+<section class='max-w-7xl mx-auto px-4 py-16 md:py-24 text-white'>
+    <!-- Header Section -->
+    <div class='max-w-3xl mx-auto text-center mb-16'>
+        <h2 class='text-3xl md:text-4xl lg:text-5xl font-bold mb-6'>Strony Katalogowe</h2>
+        <p class='text-lg md:text-xl'>
+            Strona katalogowa to rozbudowana prezentacja Twojej oferty produktowej lub usługowej. To
+            idealne rozwiązanie dla firm, które chcą profesjonalnie zaprezentować swoją ofertę i
+            umożliwić klientom łatwe przeglądanie produktów lub usług.
+        </p>
+    </div>
+
+    <!-- Image Section -->
+    <div class='max-w-2xl mx-auto mb-16'>
+        <img src='/catalog-website.svg' alt='catalog website presentation' class='w-full h-auto' />
+    </div>
+
+    <!-- Features Grid -->
+    <div class='grid md:grid-cols-2 gap-12 max-w-4xl mx-auto'>
+        <!-- Left Column -->
+        <div class='space-y-8'>
+            <h3 class='text-xl md:text-2xl font-semibold mb-6'>
+                Funkcjonalności strony katalogowej:
+            </h3>
+            <ul class='space-y-4'>
+                {
+                    [
+                        'Przejrzysty katalog produktów z kategoriami',
+                        'Zaawansowana galeria zdjęć produktów',
+                        'Szczegółowe opisy i specyfikacje',
+                        'Wyszukiwarka produktów/usług',
+                        'Filtry i sortowanie ofert',
+                        'System zapytań ofertowych',
+                        'Integracja z mediami społecznościowymi',
+                        'Panel zarządzania produktami',
+                    ].map((item) => (
+                        <li class='flex items-start'>
+                            <span class='inline-block w-2 h-2 mt-2 mr-3 bg-green-500 rounded-full' />
+                            <span class=''>{item}</span>
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+
+        <!-- Right Column -->
+        <div class='space-y-8'>
+            <h3 class='text-xl md:text-2xl font-semibold mb-6'>Korzyści dla Twojego biznesu:</h3>
+            <ul class='space-y-4'>
+                {
+                    [
+                        'Profesjonalna prezentacja całej oferty',
+                        'Łatwa aktualizacja produktów i cen',
+                        'Zwiększenie zasięgu działania firmy',
+                        'Możliwość dotarcia do nowych klientów',
+                        'Automatyzacja procesu ofertowania',
+                        'Redukcja kosztów druku katalogów',
+                        'Zawsze aktualna oferta online',
+                        'Statystyki popularności produktów',
+                    ].map((item) => (
+                        <li class='flex items-start'>
+                            <span class='inline-block w-2 h-2 mt-2 mr-3 bg-green-500 rounded-full' />
+                            <span class=''>{item}</span>
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+    </div>
+</section>
