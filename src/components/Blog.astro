@@ -1,0 +1,115 @@
+<section class='max-w-7xl mx-auto px-4 py-16 md:py-24 text-white'>
+    <!-- Header Section -->
+    <div class='max-w-3xl mx-auto text-center mb-16'>
+        <h2 class='text-3xl md:text-4xl lg:text-5xl font-bold mb-6'>Blog</h2>
+        <p class='text-lg md:text-xl'>
+            Blog firmowy to potężne narzędzie content marketingu, które buduje Twoją pozycję
+            eksperta, przyciąga organiczny ruch z wyszukiwarek i angażuje potencjalnych klientów. To
+            nie tylko miejsce na artykuły, ale strategiczne narzędzie rozwoju Twojego biznesu
+            online.
+        </p>
+    </div>
+
+    <!-- Image Section -->
+    <div class='max-w-2xl mx-auto mb-16'>
+        <img src='/blog.svg' alt='blog platform visualization' class='w-full h-auto' />
+    </div>
+
+    <!-- Features Grid -->
+    <div class='grid md:grid-cols-2 gap-12 max-w-4xl mx-auto'>
+        <!-- Left Column -->
+        <div class='space-y-8'>
+            <h3 class='text-xl md:text-2xl font-semibold mb-6'>Funkcjonalności bloga:</h3>
+            <ul class='space-y-4'>
+                {
+                    [
+                        'Intuicyjny system zarządzania treścią (CMS)',
+                        'Kategoryzacja i tagowanie artykułów',
+                        'Optymalizacja SEO dla każdego wpisu',
+                        'System komentarzy i interakcji',
+                        'Integracja z mediami społecznościowymi',
+                        'Newsletter i powiadomienia o nowych wpisach',
+                        'Analityka i statystyki czytelnictwa',
+                        'Responsywny design dla wszystkich urządzeń',
+                    ].map((item) => (
+                        <li class='flex items-start'>
+                            <span class='inline-block w-2 h-2 mt-2 mr-3 bg-orange-500 rounded-full' />
+                            <span class=''>{item}</span>
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+
+        <!-- Right Column -->
+        <div class='space-y-8'>
+            <h3 class='text-xl md:text-2xl font-semibold mb-6'>Korzyści z prowadzenia bloga:</h3>
+            <ul class='space-y-4'>
+                {
+                    [
+                        'Budowanie pozycji eksperta w branży',
+                        'Zwiększenie widoczności w Google',
+                        'Edukacja i angażowanie klientów',
+                        'Regularne źródło ruchu na stronę',
+                        'Możliwość monetyzacji treści',
+                        'Budowanie społeczności wokół marki',
+                        'Wartościowy content do social media',
+                        'Narzędzie komunikacji z klientami',
+                    ].map((item) => (
+                        <li class='flex items-start'>
+                            <span class='inline-block w-2 h-2 mt-2 mr-3 bg-orange-500 rounded-full' />
+                            <span class=''>{item}</span>
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content Strategy Section -->
+    <div class='mt-16 max-w-4xl mx-auto'>
+        <h3 class='text-2xl md:text-3xl font-bold mb-8 text-center'>
+            Kompleksowa Strategia Contentu
+        </h3>
+        <div class='grid md:grid-cols-3 gap-8'>
+            <div class='bg-opacity-20 bg-orange-900 p-6 rounded-xl'>
+                <h4 class='text-xl font-semibold mb-4'>Planowanie</h4>
+                <ul class='space-y-3 text-sm'>
+                    <li>✓ Analiza słów kluczowych</li>
+                    <li>✓ Kalendarz publikacji</li>
+                    <li>✓ Badanie konkurencji</li>
+                    <li>✓ Określenie grupy docelowej</li>
+                </ul>
+            </div>
+            <div class='bg-opacity-20 bg-orange-900 p-6 rounded-xl'>
+                <h4 class='text-xl font-semibold mb-4'>Tworzenie</h4>
+                <ul class='space-y-3 text-sm'>
+                    <li>✓ Profesjonalny copywriting</li>
+                    <li>✓ Optymalizacja SEO</li>
+                    <li>✓ Grafiki i multimedia</li>
+                    <li>✓ Formatowanie treści</li>
+                </ul>
+            </div>
+            <div class='bg-opacity-20 bg-orange-900 p-6 rounded-xl'>
+                <h4 class='text-xl font-semibold mb-4'>Promocja</h4>
+                <ul class='space-y-3 text-sm'>
+                    <li>✓ Social media sharing</li>
+                    <li>✓ Newsletter marketing</li>
+                    <li>✓ Link building</li>
+                    <li>✓ Monitoring wyników</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class='mt-16 text-center'>
+        <p class='text-lg md:text-xl mb-4 text-orange-300'>
+            Rozpocznij budowanie swojej obecności online już dziś!
+        </p>
+        <p class='text-sm text-orange-200'>
+            Oferujemy kompleksową obsługę: od strategii contentowej, przez tworzenie treści, po
+            promocję i analitykę wyników.
+        </p>
+    </div>
+</section>
