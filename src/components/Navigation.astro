@@ -3,7 +3,7 @@
         <div class='flex items-center justify-between h-16'>
             {/* Logo */}
             <div class='flex-shrink-0'>
-                <a href='#' class='text-white font-bold text-xl'>Kris Websites</a>
+                <a href='#' class='text-white font-bold text-xl' aria-label='Strona główna Kris Websites'>Kris Websites</a>
             </div>
 
             {/* Desktop Navigation */}
@@ -11,24 +11,28 @@
                 <a
                     href='#strony-wizytowki'
                     class='text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium'
+                    aria-label='Przejdź do sekcji Strony Wizytówki'
                 >
                     Strony Wizytówki
                 </a>
                 <a
                     href='#strony-katalogowe'
                     class='text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium'
+                    aria-label='Przejdź do sekcji Strony Katalogowe'
                 >
                     Strony Katalogowe
                 </a>
                 <a
                     href='#blog'
                     class='text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium'
+                    aria-label='Przejdź do sekcji Blog'
                 >
                     Blog
                 </a>
                 <a
                     href='#sklep'
                     class='text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium'
+                    aria-label='Przejdź do sekcji Sklep Internetowy'
                 >
                     Sklep
                 </a>
@@ -40,6 +44,7 @@
                     href='#kontakt'
                     class='bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg
                         hover:opacity-90 transition-opacity duration-300 text-sm font-medium'
+                    aria-label='Przejdź do sekcji Kontakt'
                 >
                     Kontakt
                 </a>
@@ -51,6 +56,8 @@
                     type='button'
                     id='mobile-menu-button'
                     class='text-gray-300 hover:text-white p-2'
+                    aria-expanded='false'
+                    aria-controls='mobile-menu'
                 >
                     <span class='sr-only'>Open menu</span>
                     <svg class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
@@ -112,7 +119,9 @@
 
     if (mobileMenuButton && mobileMenu) {
         mobileMenuButton.addEventListener('click', () => {
+            const isOpen = !mobileMenu.classList.contains('hidden');
             mobileMenu.classList.toggle('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', (!isOpen).toString());
         });
     }
 
