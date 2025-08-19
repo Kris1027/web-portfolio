@@ -6,10 +6,11 @@ import Ecommerce from '../components/Ecommerce.astro';
 import Blog from '../components/Blog.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const pageTitle = 'Kris Websites';
+const pageTitle = 'Kris Websites - Nowoczesne Strony Internetowe';
+const description = 'Profesjonalne strony internetowe dla Twojego biznesu. Strony wizytówki, katalogowe, blogi i sklepy internetowe. Responsywne, szybkie i zoptymalizowane pod SEO.';
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} description={description}>
     <Hero />
     <BusinessCard />
     <CatalogWebsite />
