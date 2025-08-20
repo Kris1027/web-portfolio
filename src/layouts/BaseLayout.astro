@@ -3,20 +3,68 @@ import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 import 'aos/dist/aos.css';
-const { pageTitle } = Astro.props;
+
+export interface Props {
+    pageTitle: string;
+    description?: string;
+}
+
+const { 
+    pageTitle, 
+    description = 'Tworzę nowoczesne strony internetowe, które pomagają Twojej firmie się rozwijać. Strony wizytówki, katalogowe, blogi i sklepy internetowe.' 
+} = Astro.props as Props;
+
+const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://websites.kris1027.pl';
+const ogImage = `${siteUrl}/og-image.jpg`;
+const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
 ---
 
 <!doctype html>
 <html lang='pl'>
     <head>
-        <script defer data-domain='websites.kris1027.pl' src='https://plausible.io/js/script.js'
-        ></script>
-
         <meta charset='UTF-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        
+        <!-- Preconnect to Google Fonts -->
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+        
+        <!-- Preload critical fonts -->
+        <link 
+            rel='preload' 
+            href='https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap' 
+            as='style' 
+        />
+        
+        <!-- Load fonts -->
+        <link 
+            href='https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap' 
+            rel='stylesheet'
+        />
+        
         <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
         <meta name='generator' content={Astro.generator} />
         <title>{pageTitle}</title>
+        <meta name='description' content={description} />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content={siteUrl} />
+        <meta property='og:title' content={pageTitle} />
+        <meta property='og:description' content={description} />
+        <meta property='og:image' content={ogImage} />
+        <meta property='og:locale' content='pl_PL' />
+        
+        <!-- Twitter -->
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta property='twitter:url' content={siteUrl} />
+        <meta property='twitter:title' content={pageTitle} />
+        <meta property='twitter:description' content={description} />
+        <meta property='twitter:image' content={ogImage} />
+        
+        {plausibleDomain && (
+            <script defer data-domain={plausibleDomain} src='https://plausible.io/js/script.js'></script>
+        )}
     </head>
     <body>
         <Navigation />
