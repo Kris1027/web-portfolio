@@ -119,7 +119,7 @@
 
     if (mobileMenuButton && mobileMenu) {
         mobileMenuButton.addEventListener('click', () => {
-            const isOpen = !mobileMenu.classList.contains('hidden');
+            const isOpen = mobileMenu.classList.contains('hidden');
             mobileMenu.classList.toggle('hidden');
             mobileMenuButton.setAttribute('aria-expanded', (!isOpen).toString());
         });
